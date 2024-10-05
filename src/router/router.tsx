@@ -1,12 +1,9 @@
-import About from '../pages/About';
+import GiatSay from '../pages/GiatSay';
 import Home from '../pages/Home';
 
 const routes = {
     home: '/',
-    about: '/about',
-    id: '/@:nickname',
-    adopt: '/adopt',
-    search: '/search',
+    GiatSay: '/dich-vu-giat-say',
 };
 
 interface RouteObject {
@@ -16,7 +13,7 @@ interface RouteObject {
 }
 const publicRoutes: RouteObject[] = [
     { path: routes.home, component: Home },
-    { path: routes.about, component: About },
+    { path: routes.GiatSay, component: GiatSay },
 ];
 
 const privateRoutes: RouteObject[] = [];
