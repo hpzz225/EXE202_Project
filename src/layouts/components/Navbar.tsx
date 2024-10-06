@@ -1,4 +1,5 @@
 import logo from '../../assets/MOON NGANG-01.png';
+import { Link } from 'react-router-dom';
 const Navbar = () => {
     return (
         <nav className="bg-[#eaf3f7] py-4">
@@ -17,7 +18,9 @@ const Navbar = () => {
                         {/* Dropdown icon */}
                         <span className="ml-1">&#9662;</span>
                     </li>
-                    <li>Liên hệ</li>
+                    <Link to="/contact">
+                        <li >Liên hệ</li> 
+                    </Link>
                 </ul>
 
                 {/* Contact Button */}

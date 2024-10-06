@@ -1,5 +1,6 @@
 import About from '../pages/About';
 import Home from '../pages/Home';
+import Contact from '../pages/contact';
 
 const routes = {
     home: '/',
@@ -7,6 +8,7 @@ const routes = {
     id: '/@:nickname',
     adopt: '/adopt',
     search: '/search',
+    contact: '/contact',
 };
 
 interface RouteObject {
@@ -17,6 +19,8 @@ interface RouteObject {
 const publicRoutes: RouteObject[] = [
     { path: routes.home, component: Home },
     { path: routes.about, component: About },
+    { path: routes.contact, component: Contact },
+
 ];
 
 const privateRoutes: RouteObject[] = [];
