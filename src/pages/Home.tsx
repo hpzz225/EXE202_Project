@@ -1,5 +1,6 @@
+import ContactForm from '@/layouts/components/ContactForm/ContactForm';
 import BenefitsSection from '../layouts/components/BenefitsSection';
-import ContactSection from '../layouts/components/ContactSection';
+
 import { Hero } from '../layouts/components/Hero';
 import IntroSection from '../layouts/components/IntroSection';
 
@@ -9,7 +10,7 @@ const Home = () => {
             <Hero />
             <IntroSection />
             <BenefitsSection />
-            <ContactSection />
+            <ContactForm />
         </>
     );
 };
