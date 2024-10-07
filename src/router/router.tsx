@@ -1,19 +1,32 @@
-import GiatSay from '../pages/GiatSay';
-import Home from '../pages/Home';
+import GiatSay from "../pages/GiatSay";
+import Home from "../pages/Home";
+import Contact from "../pages/contact";
+import About from "../pages/About";
+import Services from "@/pages/services";
 
 const routes = {
-    home: '/',
-    GiatSay: '/dich-vu-giat-say',
+  home: "/",
+  about: "/about",
+  id: "/@:nickname",
+  adopt: "/adopt",
+  search: "/search",
+  contact: "/contact",
+  GiatSay: "/dich-vu-giat-say",
+  servies: "/dich-vu",
 };
 
 interface RouteObject {
-    path: string;
-    component: React.ComponentType;
-    layout?: React.ComponentType<{ children: React.ReactNode }>;
+  path: string;
+  component: React.ComponentType;
+  layout?: React.ComponentType<{ children: React.ReactNode }>;
 }
 const publicRoutes: RouteObject[] = [
-    { path: routes.home, component: Home },
-    { path: routes.GiatSay, component: GiatSay },
+  { path: routes.home, component: Home },
+  { path: routes.about, component: About },
+  { path: routes.contact, component: Contact },
+  { path: routes.servies, component: Services },
+
+  { path: routes.GiatSay, component: GiatSay },
 ];
 
 const privateRoutes: RouteObject[] = [];
